@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poster generator</title>
+<link rel="stylesheet" href="styles.css">
+<!-- html2pdf -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- qrcode -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- Everything inside this div will be printed as a PDF -->
+
+    <div class="poster">
+        <h1>Laatumarjat.fi</h1>
+        <p >Hanki laadukkaat kotimaiset marjat edullisesti ilman turhia välikäsiä ja säästä selvää rahaa!</p>
+        <div class="hinnat">
+         
+            <h2 style="margin-bottom: 20px;">Edulliset hinnat kaikille marjoille</h2>
+            <ul style=" text-align: center; list-style-type: none; margin-top: 20px;">
+                <li>Mustikat 6 € / litra siivottuina </li>
+                <li>Mustikat 40 € / 10 litraa ilman siivousta</li>
+                <li>Vadelmat: 13 € / litra</li>
+                <li>Puolukat 4 € / litra siivottuina</li>
+                <li>Karpalot 6 € / litra siivottuina</li>
+                <li></li>
+                <li></li>
+                <li style="font-style: italic;">Lisätietoja netistä ja soittamalla!</li>
+            </ul>
+        </div>
+        <div class="inlineblock">
+            <div class="images">
+                <img src="Assets/karpalot_cropped2.jpg" id="berry-image" alt="berry-image">
+                <div id="qrcode">
+                </div>
+                <!-- placeholder for image alignment -->
+                <!-- <div class="placeholder>">
+                    <img src="https://placehold.co/120" alt="placeholder" id="placeholder">
+                </div> -->
+            </div>
+        </div>
+
+        <div class="phone-numbers">
+            <div class="phone-number">
+                1111111111
+            </div>
+            <div class="phone-number">
+                1111111111
+            </div>
+            <div class="phone-number">
+                1111111111
+            </div>
+            <div class="phone-number">
+                1111111111
+            </div>
+            <div class="phone-number">
+                1111111111
+            </div>
+            <div class="phone-number">
+                1111111111
+            </div>
+            <div class="phone-number">
+                1111111111
+            </div>
+            <div class="phone-number">
+                1111111111
+            </div>
+            <div class="phone-number">
+                1111111111
+            </div>
+            <div class="phone-number">
+                1111111111
+            </div>
+            <div class="phone-number">
+                1111111111
+            </div>
+            <div class="phone-number">
+                1111111111
+            </div>
+            <div class="phone-number">
+                1111111111
+            </div>
+            <div class="phone-number">
+                1111111111
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Script that launches html2pdf: -->
+<script src="posterscript.js"></script>
+</html>

@@ -1,0 +1,132 @@
+/* styles.css */
+html {
+    margin: 0;
+    padding: 0;
+    max-width: 215mm;
+    max-height: 297mm;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 215mm;
+    max-height: 297mm;
+  }
+  
+.poster {
+width: 211mm;
+height: 297mm;
+padding: 20mm;
+background: linear-gradient(135deg, #C3E6C8, #D8C5E6);
+display: flex;
+margin-left: auto;
+margin-right: auto;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+position: relative;
+color: black;
+page-break-after: always;
+}
+
+h1 {
+font-size: 65px;
+margin: 0;
+text-align: center;
+}
+
+h2 {
+font-size: 25px;
+margin: 0;
+text-align: center;
+}
+
+.hinnat {
+position: absolute;
+top: 30%;
+background-color: white;
+padding: 40px;
+padding-bottom: 15px !important;
+box-shadow: 0px 2px 4px hsl(0 0% 0% / 25%);
+}
+
+p {
+font-size: 26px;
+text-align: center;
+margin: 40px 0px 0 20px;
+padding: 0 60px;
+position: absolute;
+top: 16%;
+}
+
+li {
+font-size: 17px;
+padding-top: 14px;
+}
+
+.phone-numbers {
+display: flex;
+max-width: 110%;
+position: absolute;
+bottom: 0;
+left: 60px;
+}
+
+.phone-number {
+font-size: 18px;
+background-color: white;
+color: black;
+border-top: 1px dashed black;
+border-right: 1px dashed black;
+border-bottom: 1px dashed black;
+border-left: 1px dashed black;
+
+/* Adjust these values to get the numbers line up nicely */
+padding: 20.0px 12.75px;
+margin-right: -74px;
+letter-spacing: 1.2px;
+
+transform: rotate(-90deg);
+transform-origin: bottom left;
+font-weight: 600;
+z-index: 2;
+}
+
+.inlineblock {
+width: 100%;
+position: absolute;
+top: 60%;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#berry-image {
+    max-width: 1325px;
+    transform: scale(0.60);
+    margin-top: -80px;
+    margin-left: -2px;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+#qrcode {
+    width: 0.3vw;
+    height: 0.3vw;
+    margin-top: 139px;
+    right: 150px;
+    position: absolute;
+    z-index: 3;
+}
+
+#placeholder {
+    position: absolute;
+    margin-top: 160px;
+    right: 20px;
+}
+
