@@ -19,7 +19,7 @@ height: 297mm;
 padding: 20mm;
 background: linear-gradient(135deg, #C3E6C8, #D8C5E6);
 display: flex;
-margin-left: auto;
+margin-left: 0;
 margin-right: auto;
 flex-direction: column;
 align-items: center;
@@ -45,7 +45,7 @@ text-align: center;
 
 .hinnat {
 position: absolute;
-top: 30%;
+top: 28%;
 background-color: white;
 padding: 40px;
 padding-bottom: 15px !important;
@@ -68,10 +68,9 @@ padding-top: 14px;
 
 .phone-numbers {
 display: flex;
-max-width: 110%;
 position: absolute;
 bottom: 0;
-left: 60px;
+left: 70px;
 }
 
 .phone-number {
@@ -84,8 +83,8 @@ border-bottom: 1px dashed black;
 border-left: 1px dashed black;
 
 /* Adjust these values to get the numbers line up nicely */
-padding: 20.0px 12.75px;
-margin-right: -74px;
+padding: 23.0px 13.50px;
+margin-right: -75px;
 letter-spacing: 1.2px;
 
 transform: rotate(-90deg);
@@ -98,20 +97,27 @@ z-index: 2;
 width: 100%;
 position: absolute;
 top: 60%;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .images {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    margin: auto;
+    width: 100%;
+    max-width: fit-content;
 }
 
 #berry-image {
-    max-width: 1325px;
-    transform: scale(0.60);
-    margin-top: -80px;
-    margin-left: -2px;
-    opacity: 0.6;
+    max-width: 100%;
+    /* max-height: 400px; */
+    /* transform: scale(0.60); */
+    margin-top: 50px;
+
+    object-fit: contain;
+    opacity: 0.8;
     z-index: 1;
 }
 
@@ -130,3 +136,15 @@ top: 60%;
     right: 20px;
 }
 
+@media print {
+  .poster {
+    margin-left: 0;
+  }
+  #berry-image {
+    max-width: 100%;
+  }
+}
+
+.poster {
+  overflow: hidden;
+}

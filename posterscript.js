@@ -15,18 +15,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Use html2pdf to create a PDF of the element
 
-    html2pdf().from(element).set({
-        margin: [0, -59, 0, 0],
-        filename: 'poster.pdf',
-        pagebreak: false,
-        html2canvas: {
-            scale: 2
-        },
-        jsPDF: {
-            unit: 'mm',
-            format: 'a4',
-            orientation: 'portrait'
-        }
-    }).save();
-
+html2pdf().from(element).set({
+  margin: [0, -2, 0, 0],
+  filename: 'poster.pdf',
+  pagebreak: false,
+  html2canvas: {
+    scale: 2
+  },
+  jsPDF: {
+    unit: 'mm',
+    format: 'a4',
+    orientation: 'portrait'
+  }
+}).save();
 });
